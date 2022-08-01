@@ -1,0 +1,299 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'KOTRAHOPE';
+    font-size: 1.1em;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none; 
+    color:#333;
+}
+.menu1{
+    display:flex; 
+    justify-content: space-between;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    background-color: white;
+    
+   /* top: 0px; */
+}
+.menu{
+  padding: 30px;
+}
+.depth_1{
+    font-size: 0.6em;
+    z-index: 2;
+
+}
+.sub{
+    float: right;
+}
+.logo{
+  position: relative;
+  left: 60px;
+  padding: 20px;
+}
+.menu > li{
+    position:relative; 
+    float:left; 
+    margin-right:5px;
+}
+.menu > li > a{
+    display:block; 
+    padding:0 15px; 
+    background:white; 
+    height:40px; 
+    line-height:40px; 
+    color:black;
+}
+.menu > li:hover .depth_1 {
+    display:block;
+}
+.menu .depth_1{
+    display:none; 
+    position:absolute; 
+    left:0; 
+    right:0; 
+    text-align:center;
+}
+.menu .depth_1 a{
+    display:block; 
+    padding:5px; 
+    background:inherit; 
+    color:#666;
+}
+.bottomBanner{
+    position: relative;
+    bottom: -120px;
+    min-width: 1100px;
+    width: 100%;
+    font-size: 13px;
+    padding: 0 100px;
+
+}
+.bottomBanner > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.bottomBanner > .icon{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    left: 45%;
+}
+.bottomBanner > .icon > a{
+    padding-top: 50px;
+    margin-left: 40px;
+}
+li{
+  list-style-type: none;
+  }
+
+  
+  
+  .prev{
+    left: 10px;
+  }
+  .prev:hover{
+    transform: translateX(-10px);
+  }
+  .next{
+    right: 10px;
+  }
+  .next:hover{
+    transform: translateX(10px);
+  }
+.product-list{
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1300px;
+}
+.products h2{
+    font-size: 24px;
+    color: #545454;
+    margin-top:80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.product{
+    display: block;
+    width: 225px;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.products .product-list{
+  font-size: 16px;
+}
+.products > h2{
+  font-size: 40px;
+}
+.product-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    height: 25px;
+}
+@keyframes scaleFont {
+    from{
+        font-size: 10px;
+    }
+    50%{
+        font-size: 25px;
+    }
+    to{
+        font-size: 15px;
+    }
+} 
+.product-name .material-symbols-outlined{
+animation: scaleFont;
+animation-duration: 5s;
+animation-iteration-count: infinite; 
+color: red;
+}
+@font-face {
+  font-family: 'KOTRAHOPE';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.Utube{
+  text-align:center;
+  background-color: #f8e6e0;
+  margin-top: -9%;
+
+}
+
+
+/* 스크롤 메뉴 */
+.warp {
+  background-color: burlywood;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  padding: 15px ;
+  text-align: center;
+  transform: translate(-50%);
+  transition: all 0.2s;
+}
+
+/* 업다운버튼 및 강아지카톡 */
+
+.dogsidemenu{
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+ 
+}
+.dogsidemenu a> img{
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+}
+.upicon{
+    position: fixed;
+    bottom: 200px; 
+    right: 20px; 
+    cursor: pointer;
+    z-index: 99;
+    
+    
+}
+.downicon{
+  position: fixed;
+    bottom: 155px; 
+    right: 20px; 
+    cursor: pointer;
+    z-index: 99;
+}
+    
+
+
+
+
+
+.slideshow-container{
+  margin-top: 140px;
+}
+.slideshow-container img{
+  height: 350px;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
